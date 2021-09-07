@@ -5,14 +5,15 @@ public class UserRegistrationMain {
 	
 public static void main(String[] args) {
 	
-	UserRegistration newUser = new UserRegistration();
+	UserRegistration user = new UserRegistration();
 	System.out.println("User Registration:");
 
-//	newUser.setFirstName();
-//	newUser.setLastName();
-//	newUser.setEmail();
-//	newUser.setMobileNumber();
-	newUser.setPassword();
+	user.createNewUser();
+	user.setFirstName();
+	user.setLastName();
+	user.setEmail();
+	user.setMobileNumber();
+	user.setPassword();
 	UserRegistration.scanner.close();
 }
 }
