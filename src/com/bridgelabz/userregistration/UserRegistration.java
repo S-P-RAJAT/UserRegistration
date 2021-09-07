@@ -67,5 +67,13 @@ public class UserRegistration {
 			
 		}
 	}
+	public void clearRecords() {
+		this.user.setFirstName("");
+		this.user.setLastName("");
+		this.user.setEmail("");
+		this.user.setMobileNumber("");
+		this.user.setPassword("");
+		
+	}
 	
 }
