@@ -8,10 +8,10 @@ public static void main(String[] args) {
 	UserRegistration newUser = new UserRegistration();
 	System.out.println("User Registration:");
 
-	newUser.getFirstName();
-	newUser.getLastName();
-	newUser.getEmail();
-	newUser.getMobileNumber();
+	newUser.setFirstName();
+	newUser.setLastName();
+	newUser.setEmail();
+	newUser.setMobileNumber();
 	UserRegistration.scanner.close();
 }
 }

@@ -8,21 +8,22 @@ public class UserRegistration {
 	public boolean isNameValid(String name) {
 		return name.matches("[A-Z][a-z]{2,}");
 	}
-	public void getFirstName() {
+	public void setFirstName() {
 		System.out.print("\nEnter your First Name: ");
 		System.out.println(isNameValid(scanner.nextLine()));
 	}
-	public void getLastName() {
+	public void setLastName() {
 		System.out.print("\nEnter your Last Name: ");
 		System.out.println(isNameValid(scanner.nextLine()));
 	}
-	public void getEmail() {
+	public void setEmail() {
 		System.out.print("\nEnter your Email: ");
 		System.out.println(scanner.nextLine().matches("^[a-z]+([.]?[a-z0-9_+-]+)?@[a-z1-9]+[.][a-z]{2,}([.][a-z]{2,})?$"));
 		
 	}
-	public void getMobileNumber() {
+	public void setMobileNumber() {
 		System.out.print("\nEnter your Mobile Number: ");
 		System.out.println(scanner.nextLine().matches("^\\d{2} \\d{10}$"));
 	}
+	
 }
