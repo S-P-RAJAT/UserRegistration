@@ -28,7 +28,11 @@ public class UserRegistration {
 	public void setPassword() {
 		System.out.println("\nRules to follow while creating a password: ");
 		System.out.println("Rule 1: Minimum 8 characters");
-		System.out.print("\nEnter your Mobile Number: ");
-		System.out.println(scanner.nextLine().matches("^(?=.*[A-Z])(?=.*[0-9]).{8,}$"));
+		System.out.println("Rule 2: Atleast one uppercase character");
+		System.out.println("Rule 3: Atleast one digit");
+		System.out.println("Rule 4: Has exactly one special case character");
+
+		System.out.print("\nEnter your Password: ");
+		System.out.println(scanner.nextLine().matches("^(?=.*[A-Z])(?=.*[0-9])(?=.{8,})[0-9a-zA-Z]*[^0-9a-zA-Z][0-9a-zA-Z]*$"));
 	}
 }
