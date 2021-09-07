@@ -6,7 +6,10 @@ public class UserRegistrationMain {
 public static void main(String[] args) {
 	
 	UserRegistration newUser = new UserRegistration();
+	System.out.println("User Registration:");
+
 	newUser.getFirstName();
+	newUser.getLastName();
 	UserRegistration.scanner.close();
 }
 }

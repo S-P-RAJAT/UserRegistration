@@ -9,10 +9,11 @@ public class UserRegistration {
 		return name.matches("[A-Z][a-z]{2,}");
 	}
 	public void getFirstName() {
-		String inputString = "";
-		System.out.println("User Registration:");
 		System.out.println("Enter your First Name");
-		inputString = scanner.nextLine();
-		System.out.println(isNameValid(inputString));
+		System.out.println(isNameValid(scanner.nextLine()));
+	}
+	public void getLastName() {
+		System.out.println("Enter your Last Name");
+		System.out.println(isNameValid(scanner.nextLine()));
 	}
 }
