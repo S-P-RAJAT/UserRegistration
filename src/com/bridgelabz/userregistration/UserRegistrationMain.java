@@ -14,7 +14,9 @@ public static void main(String[] args) {
 	user.setEmail();
 	user.setMobileNumber();
 	user.setPassword();
+	user.displayRecords();
 	user.clearRecords();
+	user.displayRecords();
 	UserRegistration.scanner.close();
 }
 }

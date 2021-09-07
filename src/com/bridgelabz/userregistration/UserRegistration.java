@@ -20,7 +20,8 @@ public class UserRegistration {
 		if(isNameValid(inputString)) {
 			this.user.setFirstName(inputString);
 		} else {
-			System.out.println("Invalid format");
+			System.out.println("Invalid format! First letter should be capital \nand minimum three characters are required");
+			setFirstName();
 		}
 	}
 	public void setLastName() {
@@ -29,7 +30,8 @@ public class UserRegistration {
 		if(isNameValid(inputString)) {
 			this.user.setLastName(inputString);
 		} else {
-			System.out.println("Invalid format");
+			System.out.println("Invalid format! First letter should be capital \nand minimum three characters are required");
+			setLastName();
 		}
 	}
 	public void setEmail() {
@@ -38,7 +40,8 @@ public class UserRegistration {
 		if(inputString.matches("^[a-z]+([.]?[a-z0-9_+-]+)?@[a-z1-9]+[.][a-z]{2,}([.][a-z]{2,})?$")) {
 			this.user.setEmail(inputString);
 		} else {
-			System.out.println("Invalid format");
+			System.out.println("Invalid format! \nExample format: raj.sharma123@yahoo.com");
+			setEmail();
 		}
 		
 	}
@@ -48,7 +51,8 @@ public class UserRegistration {
 		if(inputString.matches("^\\d{2} \\d{10}$")) {
 			this.user.setMobileNumber(inputString);
 		} else {
-			System.out.println("Invalid format");
+			System.out.println("Invalid format! \nExample format: 91 9324567863");
+			setMobileNumber();
 		}
 	}
 	public void setPassword() {
@@ -63,7 +67,8 @@ public class UserRegistration {
 		if(inputString.matches("^(?=.*[A-Z])(?=.*[0-9])(?=.{8,})[0-9a-zA-Z]*[^0-9a-zA-Z][0-9a-zA-Z]*$")) {
 			this.user.setPassword(inputString);
 		} else {
-			System.out.println("Invalid format");
+			System.out.println("Invalid format! Try Again");
+			setPassword();
 			
 		}
 	}
@@ -73,7 +78,14 @@ public class UserRegistration {
 		this.user.setEmail("");
 		this.user.setMobileNumber("");
 		this.user.setPassword("");
+		System.out.println("\nUser details are cleared!");
 		
+	}
+	public void displayRecords() {
+		System.out.println("\nFirst Name: "+this.user.getFirstName());
+		System.out.println("Last Name: "+this.user.getLastName());
+		System.out.println("Email: "+this.user.getEmail());
+		System.out.println("Mobile Number: "+this.user.getMobileNumber());
 	}
 	
 }
