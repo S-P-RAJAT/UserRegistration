@@ -29,6 +29,6 @@ public class UserRegistration {
 		System.out.println("\nRules to follow while creating a password: ");
 		System.out.println("Rule 1: Minimum 8 characters");
 		System.out.print("\nEnter your Mobile Number: ");
-		System.out.println(scanner.nextLine().matches("^(?=.*[A-Z]).{8,}$"));
+		System.out.println(scanner.nextLine().matches("^(?=.*[A-Z])(?=.*[0-9]).{8,}$"));
 	}
 }
