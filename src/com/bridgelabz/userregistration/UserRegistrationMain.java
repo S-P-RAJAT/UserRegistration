@@ -12,6 +12,7 @@ public static void main(String[] args) {
 	newUser.setLastName();
 	newUser.setEmail();
 	newUser.setMobileNumber();
+	newUser.setPassword();
 	UserRegistration.scanner.close();
 }
 }

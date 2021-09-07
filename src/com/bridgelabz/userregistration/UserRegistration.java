@@ -25,5 +25,10 @@ public class UserRegistration {
 		System.out.print("\nEnter your Mobile Number: ");
 		System.out.println(scanner.nextLine().matches("^\\d{2} \\d{10}$"));
 	}
-	
+	public void setPassword() {
+		System.out.println("\nRules to follow while creating a password: ");
+		System.out.println("Rule 1: Minimum 8 characters");
+		System.out.print("\nEnter your Mobile Number: ");
+		System.out.println(scanner.nextLine().matches("^.{8,}$"));
+	}
 }
