@@ -9,11 +9,16 @@ public class UserRegistration {
 		return name.matches("[A-Z][a-z]{2,}");
 	}
 	public void getFirstName() {
-		System.out.println("Enter your First Name");
+		System.out.print("\nEnter your First Name: ");
 		System.out.println(isNameValid(scanner.nextLine()));
 	}
 	public void getLastName() {
-		System.out.println("Enter your Last Name");
+		System.out.print("\nEnter your Last Name: ");
 		System.out.println(isNameValid(scanner.nextLine()));
+	}
+	public void getEmail() {
+		System.out.print("\nEnter your Email: ");
+		System.out.println(scanner.nextLine().matches("^[a-z]+([.]?[a-z0-9_+-]+)?@[a-z1-9]+[.][a-z]{2,}([.][a-z]{2,})?$"));
+		
 	}
 }
